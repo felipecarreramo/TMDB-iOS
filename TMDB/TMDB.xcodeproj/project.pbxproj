@@ -16,6 +16,7 @@
 		881F32A31AD82D0300E16D5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881F32A11AD82D0300E16D5C /* LaunchScreen.xib */; };
 		881F32AF1AD82D0300E16D5C /* TMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32AE1AD82D0300E16D5C /* TMDBTests.m */; };
 		8870028A1AD86CA8001F2BA2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 887002891AD86CA8001F2BA2 /* Podfile */; };
+		8870028E1AD87A0A001F2BA2 /* TVSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870028D1AD87A0A001F2BA2 /* TVSerie.m */; };
 		EC1E065B37C7BB8CCC4AAC81 /* libPods-TMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290A98E9678968331ACBF67B /* libPods-TMDB.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		881F32AD1AD82D0300E16D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881F32AE1AD82D0300E16D5C /* TMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDBTests.m; sourceTree = "<group>"; };
 		887002891AD86CA8001F2BA2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		8870028C1AD87A0A001F2BA2 /* TVSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVSerie.h; path = Models/TVSerie.h; sourceTree = "<group>"; };
+		8870028D1AD87A0A001F2BA2 /* TVSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVSerie.m; path = Models/TVSerie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		881F328E1AD82D0300E16D5C /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				8870028B1AD8794B001F2BA2 /* Models */,
 				881F32931AD82D0300E16D5C /* AppDelegate.h */,
 				881F32941AD82D0300E16D5C /* AppDelegate.m */,
 				881F32991AD82D0300E16D5C /* ViewController.h */,
@@ -147,6 +151,15 @@
 				881F32AD1AD82D0300E16D5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8870028B1AD8794B001F2BA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8870028C1AD87A0A001F2BA2 /* TVSerie.h */,
+				8870028D1AD87A0A001F2BA2 /* TVSerie.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 				881F32981AD82D0300E16D5C /* TMDB.xcdatamodeld in Sources */,
 				881F329B1AD82D0300E16D5C /* ViewController.m in Sources */,
 				881F32921AD82D0300E16D5C /* main.m in Sources */,
+				8870028E1AD87A0A001F2BA2 /* TVSerie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
