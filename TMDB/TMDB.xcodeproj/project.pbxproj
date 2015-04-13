@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EDE94BE1ADB7D5100F8CC04 /* TMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */; };
+		7EDE94C11ADB7D8C00F8CC04 /* DAOTMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */; };
+		7EDE94C61ADB872E00F8CC04 /* TMViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94C51ADB872E00F8CC04 /* TMViewCell.m */; };
 		881F32921AD82D0300E16D5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32911AD82D0300E16D5C /* main.m */; };
 		881F32951AD82D0300E16D5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32941AD82D0300E16D5C /* AppDelegate.m */; };
-		881F32981AD82D0300E16D5C /* TMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 881F32961AD82D0300E16D5C /* TMDB.xcdatamodeld */; };
 		881F329B1AD82D0300E16D5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F329A1AD82D0300E16D5C /* ViewController.m */; };
 		881F329E1AD82D0300E16D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F329C1AD82D0300E16D5C /* Main.storyboard */; };
 		881F32A01AD82D0300E16D5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881F329F1AD82D0300E16D5C /* Images.xcassets */; };
@@ -34,12 +36,17 @@
 		1D41E68DF8987B92398DDCCE /* Pods-TMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB/Pods-TMDB.debug.xcconfig"; sourceTree = "<group>"; };
 		290A98E9678968331ACBF67B /* libPods-TMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3524AF8C707DACDD30CCC86E /* Pods-TMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB/Pods-TMDB.release.xcconfig"; sourceTree = "<group>"; };
+		7EDE94B91ADB747700F8CC04 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		7EDE94BD1ADB7D5100F8CC04 /* TMDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TMDB.xcdatamodel; sourceTree = "<group>"; };
+		7EDE94BF1ADB7D8C00F8CC04 /* DAOTMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAOTMDB.h; path = Models/DAOTMDB.h; sourceTree = "<group>"; };
+		7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOTMDB.m; path = Models/DAOTMDB.m; sourceTree = "<group>"; };
+		7EDE94C41ADB872E00F8CC04 /* TMViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMViewCell.h; path = Views/collections/TMViewCell.h; sourceTree = "<group>"; };
+		7EDE94C51ADB872E00F8CC04 /* TMViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMViewCell.m; path = Views/collections/TMViewCell.m; sourceTree = "<group>"; };
 		881F328C1AD82D0300E16D5C /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F32901AD82D0300E16D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881F32911AD82D0300E16D5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		881F32931AD82D0300E16D5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		881F32941AD82D0300E16D5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		881F32971AD82D0300E16D5C /* TMDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TMDB.xcdatamodel; sourceTree = "<group>"; };
 		881F32991AD82D0300E16D5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		881F329A1AD82D0300E16D5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		881F329D1AD82D0300E16D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +96,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7EDE94C21ADB86E300F8CC04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EDE94C31ADB86ED00F8CC04 /* collections */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7EDE94C31ADB86ED00F8CC04 /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				7EDE94C41ADB872E00F8CC04 /* TMViewCell.h */,
+				7EDE94C51ADB872E00F8CC04 /* TMViewCell.m */,
+			);
+			name = collections;
+			sourceTree = "<group>";
+		};
 		881F32831AD82D0300E16D5C = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +136,7 @@
 		881F328E1AD82D0300E16D5C /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				7EDE94C21ADB86E300F8CC04 /* Views */,
 				8870028B1AD8794B001F2BA2 /* Models */,
 				881F32931AD82D0300E16D5C /* AppDelegate.h */,
 				881F32941AD82D0300E16D5C /* AppDelegate.m */,
@@ -120,8 +145,8 @@
 				881F329C1AD82D0300E16D5C /* Main.storyboard */,
 				881F329F1AD82D0300E16D5C /* Images.xcassets */,
 				881F32A11AD82D0300E16D5C /* LaunchScreen.xib */,
-				881F32961AD82D0300E16D5C /* TMDB.xcdatamodeld */,
 				881F328F1AD82D0300E16D5C /* Supporting Files */,
+				7EDE94B91ADB747700F8CC04 /* constants.h */,
 			);
 			path = TMDB;
 			sourceTree = "<group>";
@@ -156,8 +181,11 @@
 		8870028B1AD8794B001F2BA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */,
 				8870028C1AD87A0A001F2BA2 /* TVSerie.h */,
 				8870028D1AD87A0A001F2BA2 /* TVSerie.m */,
+				7EDE94BF1ADB7D8C00F8CC04 /* DAOTMDB.h */,
+				7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -299,9 +327,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				881F32951AD82D0300E16D5C /* AppDelegate.m in Sources */,
-				881F32981AD82D0300E16D5C /* TMDB.xcdatamodeld in Sources */,
 				881F329B1AD82D0300E16D5C /* ViewController.m in Sources */,
 				881F32921AD82D0300E16D5C /* main.m in Sources */,
+				7EDE94C11ADB7D8C00F8CC04 /* DAOTMDB.m in Sources */,
+				7EDE94C61ADB872E00F8CC04 /* TMViewCell.m in Sources */,
+				7EDE94BE1ADB7D5100F8CC04 /* TMDB.xcdatamodeld in Sources */,
 				8870028E1AD87A0A001F2BA2 /* TVSerie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,13 +543,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		881F32961AD82D0300E16D5C /* TMDB.xcdatamodeld */ = {
+		7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				881F32971AD82D0300E16D5C /* TMDB.xcdatamodel */,
+				7EDE94BD1ADB7D5100F8CC04 /* TMDB.xcdatamodel */,
 			);
-			currentVersion = 881F32971AD82D0300E16D5C /* TMDB.xcdatamodel */;
-			path = TMDB.xcdatamodeld;
+			currentVersion = 7EDE94BD1ADB7D5100F8CC04 /* TMDB.xcdatamodel */;
+			name = TMDB.xcdatamodeld;
+			path = Models/TMDB.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

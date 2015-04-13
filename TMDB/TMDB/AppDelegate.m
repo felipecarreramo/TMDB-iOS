@@ -10,6 +10,8 @@
 
 #import <RestKit/CoreData.h>
 #import <RestKit/RestKit.h>
+#import "Models/TVSerie.h"
+#import "constants.h"
 
 
 @interface AppDelegate ()
@@ -20,17 +22,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    NSURL *baseURL = [NSURL URLWithString:@"http://api.themoviedb.org/3/"];
+
+    NSURL *baseURL = [NSURL URLWithString:WS_BASE_PATH];
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:baseURL];
-    
+
     NSManagedObjectModel *objectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:objectModel];
     objectManager.managedObjectStore = managedObjectStore;
-    
+
     [managedObjectStore createPersistentStoreCoordinator];
     NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"TMDB.sqlite"];
-    
+
     NSString *seedPath = [[NSBundle mainBundle] pathForResource:@"RKSeedDatabase" ofType:@"sqlite"];
     NSError *error;
     NSDictionary *options = @{
@@ -39,13 +41,33 @@
                               };
     NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:storePath fromSeedDatabaseAtPath:seedPath withConfiguration:nil options:options error:&error];
     NSAssert(persistentStore, @"Failed to add persistent store with error %@", error);
-    
-    
+
+
     [managedObjectStore createManagedObjectContexts];
     managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
-    
-    
-    
+
+
+    RKEntityMapping *tvSeriesMapping = [RKEntityMapping mappingForEntityForName:@"TVSerie" inManagedObjectStore:managedObjectStore];
+    tvSeriesMapping.identificationAttributes = @[@"identifier"];
+    [tvSeriesMapping addAttributeMappingsFromDictionary:@{  @"id":@"identifier",
+                                                            @"name":@"name",
+                                                            @"poster_path":@"poster",
+                                                            @"backdrop_path":@"cover",
+                                                            @"overview":@"overview",
+                                                            @"number_of_seasons":@"numberSeasons",
+                                                           }];
+
+    RKResponseDescriptor *descTVSeries = [RKResponseDescriptor responseDescriptorWithMapping:tvSeriesMapping
+                                                                                      method:RKRequestMethodGET
+                                                                                 pathPattern:nil
+                                                                                     keyPath:@"results"
+                                                                                 statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+
+    [objectManager addResponseDescriptor:descTVSeries];
+
+
+
+
     return YES;
 }
 
