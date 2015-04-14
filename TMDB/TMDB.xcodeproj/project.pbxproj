@@ -10,6 +10,7 @@
 		7EDE94BE1ADB7D5100F8CC04 /* TMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */; };
 		7EDE94C11ADB7D8C00F8CC04 /* DAOTMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */; };
 		7EDE94C61ADB872E00F8CC04 /* TMViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94C51ADB872E00F8CC04 /* TMViewCell.m */; };
+		7EDE94C91ADC8AEB00F8CC04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE94C81ADC8AEB00F8CC04 /* DetailViewController.m */; };
 		881F32921AD82D0300E16D5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32911AD82D0300E16D5C /* main.m */; };
 		881F32951AD82D0300E16D5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32941AD82D0300E16D5C /* AppDelegate.m */; };
 		881F329B1AD82D0300E16D5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F329A1AD82D0300E16D5C /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAOTMDB.m; path = Models/DAOTMDB.m; sourceTree = "<group>"; };
 		7EDE94C41ADB872E00F8CC04 /* TMViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMViewCell.h; path = Views/collections/TMViewCell.h; sourceTree = "<group>"; };
 		7EDE94C51ADB872E00F8CC04 /* TMViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMViewCell.m; path = Views/collections/TMViewCell.m; sourceTree = "<group>"; };
+		7EDE94C71ADC8AEB00F8CC04 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7EDE94C81ADC8AEB00F8CC04 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		881F328C1AD82D0300E16D5C /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F32901AD82D0300E16D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881F32911AD82D0300E16D5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				881F32941AD82D0300E16D5C /* AppDelegate.m */,
 				881F32991AD82D0300E16D5C /* ViewController.h */,
 				881F329A1AD82D0300E16D5C /* ViewController.m */,
+				7EDE94C71ADC8AEB00F8CC04 /* DetailViewController.h */,
+				7EDE94C81ADC8AEB00F8CC04 /* DetailViewController.m */,
 				881F329C1AD82D0300E16D5C /* Main.storyboard */,
 				881F329F1AD82D0300E16D5C /* Images.xcassets */,
 				881F32A11AD82D0300E16D5C /* LaunchScreen.xib */,
@@ -329,6 +334,7 @@
 				881F32951AD82D0300E16D5C /* AppDelegate.m in Sources */,
 				881F329B1AD82D0300E16D5C /* ViewController.m in Sources */,
 				881F32921AD82D0300E16D5C /* main.m in Sources */,
+				7EDE94C91ADC8AEB00F8CC04 /* DetailViewController.m in Sources */,
 				7EDE94C11ADB7D8C00F8CC04 /* DAOTMDB.m in Sources */,
 				7EDE94C61ADB872E00F8CC04 /* TMViewCell.m in Sources */,
 				7EDE94BE1ADB7D5100F8CC04 /* TMDB.xcdatamodeld in Sources */,

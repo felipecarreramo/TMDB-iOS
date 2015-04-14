@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TVSerie.h"
 
 @interface DAOTMDB : NSObject
 
@@ -14,10 +15,12 @@
 +(id) sharedManager;
 
 -(NSArray *) listSeries;
-
+-(TVSerie *) findLocallyTVSeriewithIdentifier:(NSNumber *) identifier;
+-(NSArray *) findLocallyTVSeriesByName:(NSString *) name;
 
 
 -(void) saveLocallyTVseries:(void(^)(void)) onSuccess orError:(void(^)(NSError *)) onError;
-
+-(void) saveMoreInfoOfTVserie:(TVSerie *) serie success:(void(^)(void)) onSuccess orError:(void(^)(NSError *)) onError;
+-(void) saveLocallyTVseriesFilteredByName:(NSString *) searchKey success:(void(^)(void)) onSuccess orError:(void(^)(NSError *)) onError;
 
 @end
