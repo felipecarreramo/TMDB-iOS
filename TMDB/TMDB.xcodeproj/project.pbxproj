@@ -19,7 +19,8 @@
 		881F32A31AD82D0300E16D5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881F32A11AD82D0300E16D5C /* LaunchScreen.xib */; };
 		881F32AF1AD82D0300E16D5C /* TMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32AE1AD82D0300E16D5C /* TMDBTests.m */; };
 		8870028A1AD86CA8001F2BA2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 887002891AD86CA8001F2BA2 /* Podfile */; };
-		8870028E1AD87A0A001F2BA2 /* TVSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8870028D1AD87A0A001F2BA2 /* TVSerie.m */; };
+		88AA41B01ADDAB6E00490A52 /* TVSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA41AF1ADDAB6E00490A52 /* TVSerie.m */; };
+		88AA41B31ADDAB6E00490A52 /* TVSerieDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA41B21ADDAB6E00490A52 /* TVSerieDetail.m */; };
 		EC1E065B37C7BB8CCC4AAC81 /* libPods-TMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290A98E9678968331ACBF67B /* libPods-TMDB.a */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +60,11 @@
 		881F32AD1AD82D0300E16D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881F32AE1AD82D0300E16D5C /* TMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDBTests.m; sourceTree = "<group>"; };
 		887002891AD86CA8001F2BA2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		8870028C1AD87A0A001F2BA2 /* TVSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVSerie.h; path = Models/TVSerie.h; sourceTree = "<group>"; };
-		8870028D1AD87A0A001F2BA2 /* TVSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVSerie.m; path = Models/TVSerie.m; sourceTree = "<group>"; };
+		88AA41AA1ADD8DB900490A52 /* TMDB 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TMDB 2.xcdatamodel"; sourceTree = "<group>"; };
+		88AA41AE1ADDAB6E00490A52 /* TVSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVSerie.h; path = Models/TVSerie.h; sourceTree = "<group>"; };
+		88AA41AF1ADDAB6E00490A52 /* TVSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVSerie.m; path = Models/TVSerie.m; sourceTree = "<group>"; };
+		88AA41B11ADDAB6E00490A52 /* TVSerieDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVSerieDetail.h; path = Models/TVSerieDetail.h; sourceTree = "<group>"; };
+		88AA41B21ADDAB6E00490A52 /* TVSerieDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVSerieDetail.m; path = Models/TVSerieDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */,
-				8870028C1AD87A0A001F2BA2 /* TVSerie.h */,
-				8870028D1AD87A0A001F2BA2 /* TVSerie.m */,
 				7EDE94BF1ADB7D8C00F8CC04 /* DAOTMDB.h */,
 				7EDE94C01ADB7D8C00F8CC04 /* DAOTMDB.m */,
+				88AA41B11ADDAB6E00490A52 /* TVSerieDetail.h */,
+				88AA41B21ADDAB6E00490A52 /* TVSerieDetail.m */,
+				88AA41AE1ADDAB6E00490A52 /* TVSerie.h */,
+				88AA41AF1ADDAB6E00490A52 /* TVSerie.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -337,8 +343,9 @@
 				7EDE94C91ADC8AEB00F8CC04 /* DetailViewController.m in Sources */,
 				7EDE94C11ADB7D8C00F8CC04 /* DAOTMDB.m in Sources */,
 				7EDE94C61ADB872E00F8CC04 /* TMViewCell.m in Sources */,
+				88AA41B01ADDAB6E00490A52 /* TVSerie.m in Sources */,
 				7EDE94BE1ADB7D5100F8CC04 /* TMDB.xcdatamodeld in Sources */,
-				8870028E1AD87A0A001F2BA2 /* TVSerie.m in Sources */,
+				88AA41B31ADDAB6E00490A52 /* TVSerieDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,9 +559,10 @@
 		7EDE94BC1ADB7D5100F8CC04 /* TMDB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				88AA41AA1ADD8DB900490A52 /* TMDB 2.xcdatamodel */,
 				7EDE94BD1ADB7D5100F8CC04 /* TMDB.xcdatamodel */,
 			);
-			currentVersion = 7EDE94BD1ADB7D5100F8CC04 /* TMDB.xcdatamodel */;
+			currentVersion = 88AA41AA1ADD8DB900490A52 /* TMDB 2.xcdatamodel */;
 			name = TMDB.xcdatamodeld;
 			path = Models/TMDB.xcdatamodeld;
 			sourceTree = "<group>";

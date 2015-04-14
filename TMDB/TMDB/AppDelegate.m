@@ -53,8 +53,6 @@
                                                             @"name":@"name",
                                                             @"poster_path":@"poster",
                                                             @"backdrop_path":@"cover",
-                                                            @"overview":@"overview",
-                                                            @"number_of_seasons":@"numberSeasons",
                                                            }];
 
     RKResponseDescriptor *descTVSeries = [RKResponseDescriptor responseDescriptorWithMapping:tvSeriesMapping
@@ -63,9 +61,21 @@
                                                                                      keyPath:@"results"
                                                                                  statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
 
+    
+
+    
+    RKEntityMapping *tvSeriesDetailMapping = [RKEntityMapping mappingForEntityForName:@"TVSerieDetail" inManagedObjectStore:managedObjectStore];
+    [tvSeriesMapping addAttributeMappingsFromDictionary:@{  @"overview":@"overview",
+                                                            @"numberSeasons":@"number_of_seasons"
+                                                            }];
+    RKRoute *aRoute = [RKRoute routeWithRelationshipName:@"tvSerieDetail"
+                                             objectClass:tvSeriesMapping.class
+                                             pathPattern:nil
+                                                  method:RKRequestMethodGET];
+   
+    [tvSeriesMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:nil toKeyPath:@"tvSerieDetail" withMapping:tvSeriesDetailMapping]];
     [objectManager addResponseDescriptor:descTVSeries];
-
-
+    [objectManager.router.routeSet addRoute:aRoute];
 
 
     return YES;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TVSerie" representedClassName="TVSerie" syncable="YES">
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberSeasons" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poster" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tvSerieDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TVSerieDetail" syncable="YES"/>
+    </entity>
+    <entity name="TVSerieDetail" representedClassName="TVSerieDetail" syncable="YES">
+        <attribute name="numberSeasons" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tvserie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TVSerie" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TVSerieDetail" positionX="-243" positionY="-243" width="128" height="88"/>
+        <element name="TVSerie" positionX="-533" positionY="-490" width="128" height="148"/>
+    </elements>
+</model>
